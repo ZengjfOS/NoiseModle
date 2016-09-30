@@ -2,9 +2,6 @@
  * 声明：
  *     这个函数库主要用于读写i2c设备，提供了以下功能：
  *         1. 读一串字节：i2c_data_read_str()
- *         2. 读一个字节：i2c_data_read_byte()
- *         3. 写一串字节：i2c_data_write_str()
- *         4. 写一个字节：i2c_data_write_byte()
  *
  *
  *                                      write by zengjf     2015-4-28
