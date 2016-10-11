@@ -15,7 +15,7 @@ int main(int argc, char ** argv) {
 
     i2c_data_read_str (fd, 0x10, buffer, 7);
     i2c_data_read_str (fd, 0x10, buffer + 7, 7);
-    i2c_data_read_str (fd, 0x10, buffer + 7, 2);
+    ret = i2c_data_read_str (fd, 0x10, buffer + 7, 2);
 
     int i = 0;
     for(; i < 15; i++) 
@@ -25,5 +25,5 @@ int main(int argc, char ** argv) {
 
     close(fd);
 
-    return 0;
+    return ret;
 }
